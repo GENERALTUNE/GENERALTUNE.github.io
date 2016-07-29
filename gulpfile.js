@@ -37,7 +37,8 @@ gulp.task('scripts',  () => {
                       'src/js/vendor/jquery-ui.js',
                       'src/js/vendor/bootstrap.js'
                       ],
-      'app.js': ['src/js/app.js']
+      'app.js': ['src/js/app.js'],
+      'tabs.js': ['src/js/tabs.js'],
     }, opts)
     .pipe(uglify())
     .pipe(gulp.dest('dist/js'));
