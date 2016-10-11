@@ -28,7 +28,7 @@
       var longitude = position.coords.longitude;  
       //纬度  
       var latitude = position.coords.latitude;  
-      contentEle.appendChild('当前地址的经纬度：经度' + longitude + '，纬度' + latitude); 
+      contentEle.innerHTML = contentEle.innerHTML + '<br>当前地址的经纬度：经度' + longitude + '，纬度' + latitude; 
 
       //根据经纬度获取地理位置，不太准确，获取城市区域还是可以的  
       var map = new BMap.Map("allmap"); 
@@ -36,8 +36,8 @@
       var gc = new BMap.Geocoder();  
       gc.getLocation(point, function(rs) {  
         var addComp = rs.addressComponents;  
-        contentEle.appendChild(addComp.province + ", " + addComp.city + ", " + addComp.district + ", " + addComp.street + ", " + addComp.streetNumber);  
-        contentEle.appendChild(rs);
+        contentEle.innerHTML = contentEle.innerHTML + '<br>' + addComp.province + ", " + addComp.city + ", " + addComp.district + ", " + addComp.street + ", " + addComp.streetNumber;  
+        console.log(rs);
       });
       // 这里后面可以写你的后续操作了
       // postData(longitude, latitude);
