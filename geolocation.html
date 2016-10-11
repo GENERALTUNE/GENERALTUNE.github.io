@@ -24,7 +24,7 @@
      //成功时
     function onSuccess(position) { 
       //返回用户位置  //经度 
-      var contentEle =  document.getElementsByClassName('content-display');
+      var contentEle =  document.getElementsByClassName('content-display')[0];
       var longitude = position.coords.longitude;  
       //纬度  
       var latitude = position.coords.latitude;  
@@ -65,7 +65,7 @@
         var latitude = 113.4233310000;  
         // postData(longitude, latitude);
       };
-      
+
       window.onload = function() {
         // html5获取地理位置 
         getLocation();
