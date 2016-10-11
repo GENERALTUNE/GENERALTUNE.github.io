@@ -38,7 +38,8 @@
       var gc = new BMap.Geocoder();  
       gc.getLocation(point, function(rs) {  
         var addComp = rs.addressComponents;  
-        contentEle.innerHTML = contentEle.innerHTML + '<br>' + addComp.province + ", " + addComp.city + ", " + addComp.district + ", " + addComp.street + ", " + addComp.streetNumber;  
+        contentEle.innerHTML = contentEle.innerHTML + '<br>' + addComp.province + ", " + addComp.city + ", " + addComp.district + ", " + addComp.street + ", " + addComp.streetNumber; 
+        console.log(rs); 
       });
       // 这里后面可以写你的后续操作了
       // postData(longitude, latitude);
