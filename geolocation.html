@@ -40,7 +40,7 @@
       gc.getLocation(point, function(rs) {  
         var addComp = rs.addressComponents;  
         contentEle.innerHTML = contentEle.innerHTML + '<br>' + addComp.province + ", " + addComp.city + ", " + addComp.district + ", " + addComp.street + ", " + addComp.streetNumber; 
-          $baiduGeo.text('省份（province）：' + addComp.province + '城市（city）：' + addComp.city + '地区（district）：' + addComp.district + '街道（street）：' + addComp.street + '街道号（streetNumber）：' + addComp.streetNumber);
+          $baiduGeo.html('<br>省份（province）：' + addComp.province + '<br>城市（city）：' + addComp.city + '<br>地区（district）：' + addComp.district + '<br>街道（street）：' + addComp.street + '<br>街道号（streetNumber）：' + addComp.streetNumber);
       });
       // 这里后面可以写你的后续操作了
       // postData(longitude, latitude);
