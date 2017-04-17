@@ -1,3 +1,4 @@
+
 # GENERALTUNE.github.io
 
 主页管理纪要：
@@ -19,3 +20,6 @@
 ▪若域名不能立即访问，需等待一段时间再访问。
 ▪当github成功关联到域名后，以github的链接方式进行访问，其会自动转化为域名访问。
 
+Roland McGrath       http://www.frob.com/~roland/
+
+Rechard stallman   http://www.stallman.org
